@@ -1,3 +1,7 @@
+from sempy_labs._semantic_models import (
+    get_semantic_model_refresh_schedule,
+    enable_semantic_model_scheduled_refresh,
+)
 from sempy_labs._graphQL import (
     list_graphql_apis,
     create_graphql_api,
@@ -75,6 +79,7 @@ from sempy_labs._eventhouses import (
     create_eventhouse,
     list_eventhouses,
     delete_eventhouse,
+    get_eventhouse_definition,
 )
 from sempy_labs._eventstreams import (
     list_eventstreams,
@@ -499,4 +504,7 @@ __all__ = [
     "delta_analyzer",
     # "dax_perf_test",
     # "dax_perf_test_bulk",
+    "get_semantic_model_refresh_schedule",
+    "get_eventhouse_definition",
+    "enable_semantic_model_scheduled_refresh",
 ]
